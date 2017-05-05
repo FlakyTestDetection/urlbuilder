@@ -85,7 +85,7 @@ public class Encoder {
         return sb.toString();
     }
 
-    protected String encodeQueryElement(final String input) {
+    public String encodeQueryElement(final String input) {
         return urlEncode(input, IS_NOT_PATH, IS_NOT_FRAGMENT, IS_NOT_USERINFO);
     }
 
@@ -96,7 +96,7 @@ public class Encoder {
         return urlEncode(input, IS_NOT_PATH, IS_FRAGMENT, IS_NOT_USERINFO);
     }
 
-    protected String urlEncode(final String input, final boolean isPath,
+    public String urlEncode(final String input, final boolean isPath,
             final boolean isFragment, final boolean isUserInfo)
     {
         final StringBuilder sb = new StringBuilder();
