@@ -112,6 +112,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>1.48</version> <!-- Java 1.7 compatible -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>1.2.5</version>
@@ -135,6 +141,10 @@
             <version>6.11</version>
             <scope>test</scope>
             <exclusions>
+                <exclusion>
+                    <groupId>com.beust</groupId>
+                    <artifactId>jcommander</artifactId>
+                </exclusion>
                 <exclusion>
                     <groupId>org.apache.ant</groupId>
                     <artifactId>ant</artifactId>
