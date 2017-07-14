@@ -24,3 +24,5 @@ notifications:
 script:
 - mvn test jacoco:report
 sudo: false
+notifications:
+  email: false
